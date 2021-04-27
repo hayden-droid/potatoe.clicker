@@ -19,7 +19,7 @@
 -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
 <head>
-	<title>CivClicker</title>
+	<title>Potatoe Clicker</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="styles/civclicker.css" />
 	<meta name="description" content="CivClicker: Build a Civilisation In Your Browser" />
@@ -44,11 +44,11 @@
 		<div id="ruler">Ruled by the <span id="appellation">mighty</span> <span id="rulerName">Orteil</span></div>
 	</div>
 	<div id="stripInner">
-		<span class="title">CivClicker</span>
+		<span class="title">Potatoe Clicker</span>
 		<span class="version">v1.3.3</span>
 		<a href="faq.html" target="_blank">FAQ &amp; Instructions</a>
 		<a href="updates.html" target="_blank">Game Updates Log</a>
-		<a href="https://www.reddit.com/r/CivClicker/" target="_blank">Reddit</a>
+		<!--<a href="https://www.reddit.com/r/CivClicker/" target="_blank">Reddit</a>-->
 		<a href="#" class="openSettings">Settings</a>
 		<span id="versionAlert"> - <span id="newVersionText" onclick="location.reload()">New Version Available</span></span>
 	</div>
@@ -150,12 +150,12 @@
 		</div>
 		<div id="populationCreate">
 			<div>
-				Recruit new citizens as
+				Recruit new potatoe citizens as
 				<select type="dropdown" id="newSpawnJobSelection">
-					<option value="unemployed">Idle Citizens</option>
-					<option value="farmer">Farmers</option>
-					<option value="woodcutter">Woodcutters</option>
-					<option value="miner">Miners</option>
+					<option value="unemployed">Idle potatoes</option>
+					<option value="farmer">Potatoe Farmers</option>
+					<option value="woodcutter">Potatoe Woodcutters</option>
+					<option value="miner">Potatoe Miners</option>
 				</select>
 				<span class="cost">for <span id="workerCost">...</span> food</span><span class="note">.</span>
 				<button class="unit1" id="spawn1button" onmousedown="spawn(1)">+1</button>
@@ -287,27 +287,27 @@
 	<div id="panesSelectors" class="civSection">
 		<div id="selectors" class="panesTabs">
 			<div id="buildingsSelect" class="paneSelector selected" data-target="buildingsPane" onclick="paneSelect(this)">
-				Buildings
+				Potatoe Buildings
 				<div class="alert">!</div>
 			</div>
 			<div id="upgradesSelect" class="paneSelector" data-target="upgradesPane" onclick="paneSelect(this)">
-				Upgrades
+				Potatoe Upgrades
 				<div class="alert">!</div>
 			</div>
 			<div id="deitySelect" class="paneSelector" data-target="deityPane" onclick="paneSelect(this)">
-				Deity
+				Potatoe Deity
 				<div class="alert">!</div>
 			</div>
 			<div id="conquestSelect" class="paneSelector" data-target="conquestPane" onclick="paneSelect(this)">
-				Conquest
+				Potatoe Conquest
 				<div class="alert">!</div>
 			</div>
 			<div id="tradeSelect" class="paneSelector" data-target="tradePane" onclick="paneSelect(this)">
-				Trade
+				Potatoe Trade
 				<div class="alert">!</div>
 			</div>
 			<div id="achievementsSelect" class="paneSelector" data-target="achievementsPane" onclick="paneSelect(this)">
-				Achievements
+				Potatoe Achievements
 				<div class="alert">!</div>
 			</div>
 		</div>
@@ -315,39 +315,39 @@
 		<div id="buildingsPane" class="selectPane selected">
 			<div class="landCols cols">
 				<div class="col">
-					Total Buildings: <span id="totalBuildings">...</span><br />
+					Total Potatoe Buildings: <span id="totalBuildings">...</span><br />
 				</div>
 				<div class="col">
-					Total Land: <span id="totalLand">...</span><br />
+					Total Potatoe Land: <span id="totalLand">...</span><br />
 				</div>
 			</div>
 			<div id="landBar" class="bar" title="Land usage">
 				<!-- populated by javascript -->
 			</div>
 			<p id="customBuildQuantity">
-				Custom Quantity <input id="buildingCustomQty" type="number" min="1" step="1" value="1" />
+				Custom Potatoe Quantity <input id="buildingCustomQty" type="number" min="1" step="1" value="1" />
 			</p>
 			<table id="buildings">
 				<!-- populated by javascript -->
 			</table>
 			<div id="graveTotal">
-				Unfilled Graves: <span data-action="display" data-target="grave">...</span>
+				Unfilled Potatoe Graves: <span data-action="display" data-target="grave">...</span>
 			</div>
 		</div>
 		
 		<div id="upgradesPane" class="selectPane">
 			<div id="wondersContainer">
-				<h3>Wonders</h3>
+				<h3>Potatoe Wonders</h3>
 				<span id="startWonderLine"><button id="startWonder" onmousedown="startWonder()">Start Building Wonder</button></span>
 				<div id="wonderInProgress">
-					<span class="wonderTitle">Progress on <span id="wonderNameP">Wonder</span> - <span id="progressNumber">0</span>%</span> - <button id="renameWonder" onmousedown="renameWonder()">Rename</button>
+					<span class="wonderTitle">Potatoe Progress on <span id="wonderNameP">Wonder</span> - <span id="progressNumber">0</span>%</span> - <button id="renameWonder" onmousedown="renameWonder()">Rename</button>
 					<div id="progressContainer"><div id="progressBar"></div></div>
-					<div id="lowResources">Limited<span id="limited"> by low resources</span></div>
-					<div id="speedWonderGroup"><br /><button id="speedWonder" onmousedown="speedWonder()">Speed Wonder</button>
-					<span id="speedWonderCost" class="cost">100 gold</span><span class="note">: Increase wonder progress</span></div>
+					<div id="lowResources">Potatoe Limited<span id="limited"> by low resources</span></div>
+					<div id="speedWonderGroup"><br /><button id="speedWonder" onmousedown="speedWonder()">Speed Potatoe Wonder</button>
+					<span id="speedWonderCost" class="cost">100 Potatoe gold</span><span class="note">: Increase wonder progress</span></div>
 				</div>
 				<div id="wonderCompleted">
-					<div class="wonderTitle"><span id="wonderNameC">Wonder</span> Completed! Choose Bonus:</div>
+					<div class="wonderTitle"><span id="wonderNameC">Wonder</span> Potatoe Completed! Choose Bonus:</div>
 				</div>
 				<table id="pastWonders"><tr><td></td></tr></table>
 			</div>
@@ -356,7 +356,7 @@
 		
 		<div id="deityPane" class="selectPane">
 			<div class="notYet">
-				Your civilization does not yet worship a deity. 
+				Your Potatoe civilization does not yet worship a deity. 
 				<span class="tip">You need to increase piety by assigning clerics at a temple.</span>
 			</div>
 			<div id="deityContainer">
@@ -378,30 +378,30 @@
 						<span class="upgradetrue" data-quantity="true">
 							<button id="battleDeity" class="xtrue purchaseFor500Piety" onmousedown="selectDeity('battle')">Battle</button>
 						</span>
-						<span id="battleCost" class="cost">500 piety</span>
+						<span id="battleCost" class="cost">500 Potatoe piety</span>
 					</li>
 					<li id="fieldsRow" class="purchaseRow" data-target="fields">
 						<span class="upgradetrue" data-quantity="true">
 							<button id="fieldsDeity" class="xtrue purchaseFor500Piety" onmousedown="selectDeity('fields')">Fields</button>
 						</span>
-						<span id="fieldsCost" class="cost">500 piety</span>
+						<span id="fieldsCost" class="cost">500 Potatoe piety</span>
 					</li>		
 					<li id="underworldRow" class="purchaseRow" data-target="underworld">
 						<span class="upgradetrue" data-quantity="true">
 							<button id="underworldDeity" class="xtrue purchaseFor500Piety" onmousedown="selectDeity('underworld')">Underworld</button>
 						</span>
-						<span id="underworldCost" class="cost">500 piety</span>
+						<span id="underworldCost" class="cost">500 Potatoe piety</span>
 					</li>
 					<li id="catsRow" class="purchaseRow" data-target="cats">
 						<span class="upgradetrue" data-quantity="true">
 							<button id="catsDeity" class="xtrue purchaseFor500Piety" onmousedown="selectDeity('cats')">Cats</button>
 						</span>
-						<span id="catsCost" class="cost">500 piety</span>
+						<span id="catsCost" class="cost">500 Potatoe piety</span>
 					</li>
 				</ul>
 			</div>
 			<div id="battleUpgrades">
-				<h3>The Strength of Battle</h3>
+				<h3>The Strength of Potatoe Battle</h3>
 				<table>
 					<tr id="battleAltarRow"><td></td></tr>
 					<tr id="riddleRow"><td></td></tr>
@@ -412,7 +412,7 @@
 				</table>
 			</div>
 			<div id="fieldsUpgrades">
-				<h3>The Bounty of the Fields</h3>
+				<h3>The Bounty of the Potatoe Fields</h3>
 				<table>
 					<tr id="fieldsAltarRow"><td></td></tr>
 					<tr id="blessingRow"><td></td></tr>
@@ -423,7 +423,7 @@
 				</table>
 			</div>
 			<div id="underworldUpgrades">
-				<h3>The Dread Power of the Underworld</h3>
+				<h3>The Dread Power of the Potatoe Underworld</h3>
 				<table>
 					<tr id="underworldAltarRow"><td></td></tr>
 					<tr id="bookRow"><td></td></tr>
@@ -434,7 +434,7 @@
 				</table>
 			</div>
 			<div id="catsUpgrades">
-				<h3>The Grace of Cats</h3>
+				<h3>The Grace of Potatoe Cats</h3>
 				<table>
 					<tr id="catAltarRow"><td></td></tr>
 					<tr id="lureRow"><td></td></tr>
@@ -445,24 +445,24 @@
 				</table>
 			</div>
 			<div id="pantheonContainer">
-				<h3>Pantheon</h3>
+				<h3>Potatoe Pantheon</h3>
 				<table id="oldDeities"><tr><td></td></tr></table>
 			</div>
 			<div id="iconoclasmGroup">
 				<button id="iconoclasm" onmousedown="iconoclasmList()">Iconoclasm</button>
-				<span id="iconoclasmCost" class="cost">1,000 piety</span>
-				<span id="iconoclasmNote" class="note">: Remove an old deity to gain gold</span><br />
+				<span id="iconoclasmCost" class="cost">1,000 Potatoe piety</span>
+				<span id="iconoclasmNote" class="note">: Remove an old Potatoe deity to gain gold</span><br />
 				<div id="iconoclasmList"></div>
 			</div>
 			<div id="pantheonUpgrades">
-				<h3>Pantheon Upgrades</h3>
+				<h3>Pantheon Potatoe Upgrades</h3>
 				<div id="purchasedPantheon"></div>
 			</div>
 		</div>
 		<div id="conquestPane" class="selectPane">
 			<div class="notYet">
-				You cannot command an army yet because you don't own a battle standard.
-				<span class="tip">Try building a barracks first.</span>
+				You cannot Potatoe command an army yet because you don't own a battle standard.
+				<span class="tip">Try Potatoe building a barracks first.</span>
 			</div>
 			<span id="standardRow">
 				<!--  -->
@@ -470,7 +470,7 @@
 			<div id="conquest">
 				<h3>Army</h3>
 				<p id="customPartyQuantity">
-					Custom Quantity <input id="partyCustomQty" type="number" min="1" step="1" value="1" />
+					Custom Potatoe Quantity <input id="partyCustomQty" type="number" min="1" step="1" value="1" />
 				</p>
 				<table id="party">
 					<!-- populated by javascript -->
@@ -479,14 +479,14 @@
 					<!-- -->
 				</div>
 				<div id="raidGroup">
-					<h3>To War!</h3>
+					<h3>To Potatoe War!</h3>
 					<p id="gloryGroup">
-						Glory: <span id="gloryTimer">0</span> seconds remain
+						Glory: <span id="gloryTimer">0</span> Potatoe seconds remain
 					</p>
 				</div>
 				<div id="victoryGroup">
 					<h3>Victory!</h3>
-					<button id="plunder" onmousedown="plunder()">Plunder Resources</button><br />
+					<button id="plunder" onmousedown="plunder()">Plunder PotatoeResources</button><br />
 				</div>
 			</div>
 			<div class="stats">
@@ -495,7 +495,7 @@
 		</div>
 		<div id="tradePane" class="selectPane">
 			<div class="notYet">
-				You do not yet own a trading post. <span class="tip">Try trading with a trader when they (randomly) appear.</span>
+				You do not yet own a trading post. <span class="tip">Try Potatoe trading with a trader when they (randomly) appear.</span>
 			</div>
 			<div id="tradeContainer">
 				Trader offers 1 gold for <span id="tradeRequested">...</span> <span id="tradeType">...</span>
@@ -513,14 +513,14 @@
 				<span id="currencyRow"></span>
 				<span id="commerceRow"></span>
 				<h4>Buy Resources (1 gold)</h4>
-				<button class="tradeResource" onmousedown="buy('food')">Buy 5000 Food</button><br />
-				<button class="tradeResource" onmousedown="buy('wood')">Buy 5000 Wood</button><br />
-				<button class="tradeResource" onmousedown="buy('stone')">Buy 5000 Stone</button><br />
-				<button class="tradeResource" onmousedown="buy('skins')">Buy 500 Skins</button><br />
-				<button class="tradeResource" onmousedown="buy('herbs')">Buy 500 Herbs</button><br />
-				<button class="tradeResource" onmousedown="buy('ore')">Buy 500 Ore</button><br />
-				<button class="tradeResource" onmousedown="buy('leather')">Buy 250 Leather</button><br />
-				<button class="tradeResource" onmousedown="buy('metal')">Buy 250 Metal</button><br />
+				<button class="tradeResource" onmousedown="buy('food')">Buy 5000 Potatoe Food</button><br />
+				<button class="tradeResource" onmousedown="buy('wood')">Buy 5000 Potatoe Wood</button><br />
+				<button class="tradeResource" onmousedown="buy('stone')">Buy 5000 Potatoe Stone</button><br />
+				<button class="tradeResource" onmousedown="buy('skins')">Buy 500 Potatoe Skins</button><br />
+				<button class="tradeResource" onmousedown="buy('herbs')">Buy 500 Potatoe Herbs</button><br />
+				<button class="tradeResource" onmousedown="buy('ore')">Buy 500 Potatoe Ore</button><br />
+				<button class="tradeResource" onmousedown="buy('leather')">Buy 250 Potatoe Leather</button><br />
+				<button class="tradeResource" onmousedown="buy('metal')">Buy 250 Potatoe Metal</button><br />
 			</div>
 		</div>
 		<div id="achievementsPane" class="selectPane">
